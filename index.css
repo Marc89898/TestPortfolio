@@ -1,0 +1,360 @@
+
+*{
+    margin: 0%;
+    z-index: 1;
+    
+}
+::-webkit-scrollbar {display: none;}
+
+@font-face {
+    font-family: Size;
+    src: url("TiposLetra/Seize.ttf");
+}
+@font-face {
+    font-family: Prespectiva;
+    src: url("TiposLetra/Prespectiva.ttf");
+}
+
+#FirstPage{
+    display: flex;
+    justify-content: center;
+}
+#navegacion{
+    position: sticky;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    list-style: none;
+    background-color: #231706;
+    width: 100vw;
+    z-index: 5;
+    margin-top: 5vh;
+}
+body{
+    background-color: #231706;
+    z-index: 0;
+}
+
+#cielo{
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+}
+#suelo{
+    position: absolute;
+    width: 100vw;
+    padding-top: 26%;
+    z-index: 3;
+    
+}
+#titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-top: 5vh;
+    z-index: 0;
+}
+
+.elementos1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100vh;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+
+}
+.elementos2{
+    position: relative;
+    color: #E6D5B8;
+    font-size: 1.3em;
+    /* width: 200px; */
+    padding: 5%;
+    height: 50px;
+  
+}
+#a{
+    text-decoration: none;
+    color: #E6D5B8;
+    font-family: Prespectiva;
+    
+}
+.elementos2:hover{
+    transform: translateY(-8px);
+    transition: 0.5s;
+    text-shadow:  0px 6px 0px #E45826, 0px 5px 0px #E45826, 0px 4px 0px #E45826, 0px 3px 0px #E45826, 0px 2px 0px #E45826, 0px 1px 0px #E45826;
+
+}
+.elementos2:after{
+    content: "";
+    position: absolute;
+    background-color: #E6D5B8;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+
+}
+.elementos2:hover:after{
+    width: 100%;
+}
+#FirstPage{
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes flotante{
+
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    75%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+
+
+}
+
+#nom{
+    opacity: 1;
+    transition: 0.02s;
+}
+
+.name1{
+    font-size: 4vw;
+    color: #ff6c3b;
+    font-family: Prespectiva;
+    text-shadow: 0px 10px 0px #231706,0px 9px 0px #231706, 0px 8px 0px #231706, 0px 7px 0px #231706, 0px 6px 0px #231706, 0px 5px 0px #231706, 0px 4px 0px #231706, 0px 3px 0px #231706, 0px 2px 0px #231706, 0px 1px 0px #231706 , -5px 30px 5px black;
+    animation: 3s linear flotante infinite;
+    animation-delay: 0s;
+    
+}
+
+.name2{
+    font-size: 4vw;
+    color: #ff6c3b; 
+    font-family: Prespectiva;
+    text-shadow: 0px 10px 0px #231706,0px 9px 0px #231706, 0px 8px 0px #231706, 0px 7px 0px #231706, 0px 6px 0px #231706, 0px 5px 0px #231706, 0px 4px 0px #231706, 0px 3px 0px #231706, 0px 2px 0px #231706, 0px 1px 0px #231706 , -5px 30px 5px black;
+    animation: 3s linear flotante infinite;
+    animation-delay: 0.5s;
+    margin-left: -10%;
+}
+.name3{
+    font-size: 4vw;
+    color: #ff6c3b;
+    font-family: Prespectiva;
+    text-shadow: 0px 10px 0px #231706,0px 9px 0px #231706, 0px 8px 0px #231706, 0px 7px 0px #231706, 0px 6px 0px #231706, 0px 5px 0px #231706, 0px 4px 0px #231706, 0px 3px 0px #231706, 0px 2px 0px #231706, 0px 1px 0px #231706 , -5px 30px 5px black;
+    animation: 3s linear flotante infinite;
+    animation-delay: 1s;
+}
+
+
+/*Segundo pagina*/
+
+#SecondPage{
+    width: 100vw;
+    height: 100vh;
+    color:#E6D5B8;
+}
+.hilera1{
+    margin-top: 10%;
+}
+
+#text{
+    text-align: justify;
+
+}   
+
+/*Tercera pagina*/
+
+#ThirdPage{
+    width: 100vw;
+    height: 100vh;
+    color: #E6D5B8;
+
+}
+.espacio{
+    margin-top: 40vh;
+}
+
+#Objetivos1{
+    text-align: justify;
+}
+#TituloObj{
+    font-size: 4em;
+    font-family: Prespectiva;
+    text-shadow: 0px 10px 0px #E45826,0px 9px 0px #E45826, 0px 8px 0px #E45826, 0px 7px 0px #E45826, 0px 6px 0px #E45826, 0px 5px 0px #E45826, 0px 4px 0px #E45826, 0px 3px 0px #E45826, 0px 2px 0px #E45826, 0px 1px 0px #E45826, -5px 30px 5px black;
+    animation: 3s linear flotante infinite;
+}
+
+
+
+/*Cuarta pagina*/
+
+#FourthPage{
+    width: 100vw;
+    height: 100vh;
+    color: #E6D5B8;
+}
+
+#Projects{
+    font-size: 4em;
+    font-family: Prespectiva;
+    text-shadow: 0px 10px 0px #E45826,0px 9px 0px #E45826, 0px 8px 0px #E45826, 0px 7px 0px #E45826, 0px 6px 0px #E45826, 0px 5px 0px #E45826, 0px 4px 0px #E45826, 0px 3px 0px #E45826, 0px 2px 0px #E45826, 0px 1px 0px #E45826, -5px 30px 5px black;
+    animation: 3s linear flotante infinite;
+}
+
+/*Quinta pagina, pagina de contacto*/
+
+.FivePage{
+    width: 100vw;
+    height: 100vh;
+    color: #E6D5B8;
+}
+
+#flecha{
+    animation: flecha 1s linear infinite;
+}
+
+.mensaje-formulario{
+    height: 15vh;
+}
+
+#contactUs{
+    font-size: 4em;
+    font-family: Prespectiva;
+    text-shadow: 0px 10px 0px #E45826,0px 9px 0px #E45826, 0px 8px 0px #E45826, 0px 7px 0px #E45826, 0px 6px 0px #E45826, 0px 5px 0px #E45826, 0px 4px 0px #E45826, 0px 3px 0px #E45826, 0px 2px 0px #E45826, 0px 1px 0px #E45826, -5px 30px 5px black;
+    animation: 3s linear flotante infinite;
+}
+
+#Nombre, #Telefono, #email, #mensaje{
+    box-shadow: 10px 10px 0px #E6D5B8, 9px 9px 0px #E6D5B8, 8px 8px 0px #E6D5B8, 7px 7px 0px #E6D5B8, 6px 6px 0px #E6D5B8, 5px 5px 0px #E6D5B8, 4px 4px 0px #E6D5B8, 3px 3px 0px #E6D5B8, 2px 2px 0px #E6D5B8, 1px 1px 0px #E6D5B8, -5px 30px 5px black;
+    background-color:#F0A500;
+    color: #000000;
+    border-radius: 5px;
+
+}
+#animacionSumbit1{
+    animation: 4s linear flotante infinite; 
+}
+#animacionSumbit2{
+    animation: 5s linear flotante infinite; 
+}
+#animacionSumbit3{
+    animation: 6s linear flotante infinite; 
+}
+#animacionSumbit4{
+    animation: 6.5s linear flotante infinite; 
+}
+#animacionSumbit5{
+    animation: 5.5s linear flotante infinite; 
+}
+
+/*BOTON DE SUMBIT 3D*/
+.pushable {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+  }
+  
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background:#E6D5B8;
+    will-change: transform;
+    transform: translateY(2px);
+    transition: 
+      transform
+      600ms
+      cubic-bezier(.3,.7,.4,1);
+  }
+  
+  .edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(
+      to left,
+      hsl(340deg 100% 16%) 0%,
+      hsl(340deg 100% 32%) 8%,
+      hsl(340deg 100% 32%) 92%,
+      hsl(340deg 100% 16%) 100%,
+    );
+  }
+  
+  .front {
+    display: block;
+    position: relative;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    color: white;
+    background:#E45826;
+    will-change: transform;
+    transform: translateY(-4px);
+    transition: 
+      transform
+      600ms
+      cubic-bezier(.3,.7,.4,1);
+  }
+  
+  .pushable:hover {
+    filter: brightness(110%);
+  }
+  
+  .pushable:hover .front {
+    transform: translateY(-6px);
+    transition: 
+      transform
+      250ms
+      cubic-bezier(.3,.7,.4,1.5);
+  }
+  
+  .pushable:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+  
+  .pushable:hover .shadow {
+    transform: translateY(4px);
+    transition: 
+      transform
+      250ms
+      cubic-bezier(.3,.7,.4,1.5);
+  }
+  
+  .pushable:active .shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+  }
+  
+  .pushable:focus:not(:focus-visible) {
+    outline: none;
+  }
